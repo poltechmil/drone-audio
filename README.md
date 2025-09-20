@@ -43,6 +43,7 @@ metadata/
 
 Pliki audio w katalogu `samples/` i odpowiadające im pliki metadanych w `metadata/` mają identyczne nazwy (różnią się tylko rozszerzeniem).  
 
+
 ### Format nazwy
 
 <model>_<data>_<nr>.<ext>
