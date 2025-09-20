@@ -22,4 +22,22 @@ drone-audio/
 └── README.md
 
 
+## 📊 Przykład powiązania próbek z metadanymi
+
+Każdy plik audio w katalogu `samples/` ma odpowiadający mu plik JSON w katalogu `metadata/`.  
+Nazwy plików są takie same (różnią się tylko rozszerzeniem `.wav` vs `.json`).  
+
+### Struktura
+
+```text
+samples/
+├── consumer/
+│   └── dji_mavic_air_01.wav
+└── military/
+    └── bayraktar_tb2_01.wav
+
+metadata/
+├── dji_mavic_air_01.json
+└── bayraktar_tb2_01.json
+
 
