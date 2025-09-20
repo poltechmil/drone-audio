@@ -78,7 +78,7 @@ Każdy plik `.wav` w katalogu `samples/` ma odpowiadający mu plik `.json` w kat
   "filename": "shahed_136_20250920_01.wav",
   "drone_model": "Shahed 136",
   "location": "teren zurbanizowany",
-  "description": "Lot zawisowy na wysokości ok. 100 m",
+  "description": "Przelot na wysokości ok. 100 m",
   "notes": "Nagranie w spokojnych warunkach pogodowych, brak wiatru"
 }
 ```
