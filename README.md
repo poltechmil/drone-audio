@@ -39,15 +39,33 @@ metadata/
 
 
 
+## 📑 Konwencja nazewnicza i metadane
+
+Pliki audio w katalogu `samples/` i odpowiadające im pliki metadanych w `metadata/` mają identyczne nazwy (różnią się tylko rozszerzeniem).  
+
+### Format nazwy
+
+<model>_<data>_<nr>.<ext>
+
+- `<model>` – nazwa drona, zapisana małymi literami, spacje zastąpione `_` (np. `dji_mavic_air`, `bayraktar_tb2`)  
+- `<data>` – data nagrania w formacie `YYYYMMDD` (np. `20250920`)  
+- `<nr>` – numer próbki z tego dnia (np. `01`, `02`)  
+- `<ext>` – rozszerzenie pliku (`wav` dla nagrań audio, `json` dla metadanych)  
+
+### Przykłady
+
+samples/dji_mavic_air_20250920_01.wav  
+metadata/dji_mavic_air_20250920_01.json  
+
+samples/bayraktar_tb2_20250920_02.wav  
+metadata/bayraktar_tb2_20250920_02.json  
 
 ---
 
-## 📝 Szablon metadanych (JSON)
+### Szablon metadanych (JSON)
 
 Każdy plik `.wav` w katalogu `samples/` ma odpowiadający mu plik `.json` w katalogu `metadata/`.  
-Poniżej przykładowy szablon:
 
-```json
 {
   "filename": "dji_mavic_air_20250920_01.wav",
   "drone_model": "DJI Mavic Air",
@@ -56,3 +74,12 @@ Poniżej przykładowy szablon:
   "description": "Lot zawisowy na wysokości ok. 10 m",
   "notes": "Nagranie w spokojnych warunkach pogodowych, brak wiatru"
 }
+
+### Pola
+
+- **filename** – nazwa pliku audio w katalogu `samples/`  
+- **drone_model** – pełna nazwa modelu drona  
+- **recorded_at** – data nagrania (`YYYY-MM-DD`)  
+- **location** – miejsce i warunki nagrania  
+- **description** – krótki opis nagrania  
+- **notes** – dodatkowe uwagi (np. zakłócenia, otoczenie)  
