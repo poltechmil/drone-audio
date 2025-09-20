@@ -36,9 +36,6 @@ metadata/
 └── bayraktar_tb2_01.json
 
 
-
-
-
 ## 📑 Konwencja nazewnicza i metadane
 
 Pliki audio w katalogu `samples/` i odpowiadające im pliki metadanych w `metadata/` mają identyczne nazwy
