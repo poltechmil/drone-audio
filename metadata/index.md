@@ -4,6 +4,7 @@ Lista nagrań z linkami do **audio (.wav)** i **metadanych (.json)**.
 
 | ID próbki | Model | Data | Audio | Rozmiar | Metadane |
 |---|---|---|---|---:|---|
+| `geran_2_20250920_01` | — | — | [geran_2_20250920_01.wav](../samples/geran_2_20250920_01.wav) | 1.2 M | — |
 | `geran_3_20250920_01` | Geran 3 | 2025-09-20 | [geran_3_20250920_01.wav](../samples/geran_3_20250920_01.wav) | 1.0 M | [geran_3_20250920_01.json](geran_3_20250920_01.json) |
 | `gerbera_20250920_01` | Gerbera | 2025-09-20 | [gerbera_20250920_01.wav](../samples/gerbera_20250920_01.wav) | 5.4 M | [gerbera_20250920_01.json](gerbera_20250920_01.json) |
 | `shahed_136_20250920_01` | Shahed 136 | 2025-09-20 | [shahed_136_20250920_01.wav](../samples/shahed_136_20250920_01.wav) | 1.4 M | [shahed_136_20250920_01.json](shahed_136_20250920_01.json) |
