@@ -41,7 +41,7 @@ metadata/
 
 ## 📑 Konwencja nazewnicza i metadane
 
-Pliki audio w katalogu `samples/` i odpowiadające im pliki metadanych w `metadata/` mają identyczne nazwy (różnią się tylko rozszerzeniem). 
+Pliki audio w katalogu `samples/` i odpowiadające im pliki metadanych w `metadata/` mają identyczne nazwy   (różnią się tylko rozszerzeniem). 
 
 ### Format nazwy
 
