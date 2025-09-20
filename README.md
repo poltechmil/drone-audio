@@ -41,3 +41,16 @@ metadata/
 └── bayraktar_tb2_01.json
 
 
+### Przykład pliku `metadata/dji_mavic_air_01.json`
+
+```json
+{
+  "filename": "dji_mavic_air_01.wav",
+  "drone_model": "DJI Mavic Air",
+  "category": "consumer",
+  "recorded_at": "2025-09-20",
+  "location": "teren zurbanizowany, plener",
+  "description": "Lot zawisowy na wysokości ok. 10 m",
+  "notes": "Nagranie w spokojnych warunkach pogodowych, brak wiatru"
+}
+
