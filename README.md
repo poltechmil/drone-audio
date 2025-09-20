@@ -51,7 +51,7 @@ Pliki audio w katalogu `samples/` i odpowiadające im pliki metadanych w `metada
 <model>_<data>_<nr>.<ext>
 ```
 
-- **`<model>`** – nazwa drona, zapisana małymi literami, spacje zastąpione `_` (np. `dji_mavic_air`, `bayraktar_tb2`)  
+- **`<model>`** – nazwa drona, zapisana małymi literami, spacje zastąpione `_` (np. `shahed_136`, `geran-3`)  
 - **`<data>`** – data dodania nagrania w formacie `YYYYMMDD` (np. `20250920`)  
 - **`<nr>`** – numer próbki z tego dnia (np. `01`, `02`)  
 - **`<ext>`** – rozszerzenie pliku  
