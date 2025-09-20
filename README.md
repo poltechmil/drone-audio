@@ -30,12 +30,12 @@ Nazwy plików są takie same (różnią się tylko rozszerzeniem `.wav` vs `.jso
 
 ```text
 samples/
-├── dji_mavic_air_data_01.wav
-└── bayraktar_tb2_data_01.wav
+├── shahed_136_data_01.wav
+└── shahed_136_data_02.wav
 
 metadata/
-├── dji_mavic_air_data_01.json
-└── bayraktar_tb2_data_01.json
+├── shahed_136_data_01.json
+└── shahed_136_data_01.json
 ```
 
 ---
@@ -60,11 +60,11 @@ Pliki audio w katalogu `samples/` i odpowiadające im pliki metadanych w `metada
 ### Przykłady
 
 ```text
-samples/dji_mavic_air_20250920_01.wav
-metadata/dji_mavic_air_20250920_01.json
+samples/shahed_136_20250920_01.wav
+metadata/shahed_136_20250920_01.json
 
-samples/bayraktar_tb2_20250920_02.wav
-metadata/bayraktar_tb2_20250920_02.json
+samples/shahed_136_20250920_02.wav
+metadata/shahed_136_20250920_02.json
 ```
 
 ---
@@ -75,10 +75,10 @@ Każdy plik `.wav` w katalogu `samples/` ma odpowiadający mu plik `.json` w kat
 
 ```json
 {
-  "filename": "dji_mavic_air_20250920_01.wav",
-  "drone_model": "DJI Mavic Air",
-  "location": "teren zurbanizowany, plener",
-  "description": "Lot zawisowy na wysokości ok. 10 m",
+  "filename": "shahed_136_20250920_01.wav",
+  "drone_model": "Shahed 136",
+  "location": "teren zurbanizowany",
+  "description": "Lot zawisowy na wysokości ok. 100 m",
   "notes": "Nagranie w spokojnych warunkach pogodowych, brak wiatru"
 }
 ```
