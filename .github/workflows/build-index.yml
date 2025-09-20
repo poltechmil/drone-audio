@@ -1,0 +1,75 @@
+name: Build human-friendly metadata index
+
+on:
+  push:
+    paths:
+      - "metadata/*.json"
+      - "samples/*.wav"
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Generate metadata/index.md
+        run: |
+          set -euo pipefail
+
+          human_size () {
+            # bytes -> czytelny rozmiar
+            b=$1
+            if [ "$b" -lt 1024 ]; then echo "${b} B"; exit 0; fi
+            awk -v b="$b" 'function human(x){ s="BKMGTPE"; while (x>=1024){x/=1024; s=substr(s,2)}; return sprintf("%.1f %s", x, substr(s,1,1)) } BEGIN{print human(b)}'
+          }
+
+          echo "# 📑 Indeks nagrań i metadanych" > metadata/index.md
+          echo "" >> metadata/index.md
+          echo "Poniżej znajdziesz listę nagrań z bezpośrednimi linkami do **audio (.wav)** i **metadanych (.json)**." >> metadata/index.md
+          echo "" >> metadata/index.md
+
+          # Nagłówek tabeli
+          echo "| ID próbki | Model | Data nagrania | Audio | Rozmiar | Metadane |" >> metadata/index.md
+          echo "|---|---|---|---|---:|---|" >> metadata/index.md
+
+          shopt -s nullglob
+          for wav in samples/*.wav; do
+            base=$(basename "$wav" .wav)                # np. dji_mavic_air_20250920_01
+            json="metadata/${base}.json"
+
+            # rozmiar
+            bytes=$(stat -c%s "$wav" 2>/dev/null || stat -f%z "$wav")
+            size=$(human_size "$bytes")
+
+            # dane z JSON (jeśli istnieje)
+            if [ -f "$json" ]; then
+              model=$(jq -r '.drone_model // empty' "$json" 2>/dev/null || echo "")
+              date=$(jq -r '.recorded_at // empty' "$json" 2>/dev/null || echo "")
+            else
+              model=""
+              date=""
+            fi
+
+            # Fallbacki czytelne dla człowieka
+            [ -z "$model" ] && model="—"
+            [ -z "$date" ] && date="—"
+
+            # Linki względne, działają w UI GitHuba
+            audio_link="[${base}.wav](../samples/${base}.wav)"
+            if [ -f "$json" ]; then
+              meta_link="[${base}.json](${base}.json)"
+            else
+              meta_link="—"
+            fi
+
+            echo "| \`${base}\` | ${model} | ${date} | ${audio_link} | ${size} | ${meta_link} |" >> metadata/index.md
+          done
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add metadata/index.md
+          git commit -m "Update human-friendly metadata index" || echo "No changes to commit"
+          git push
