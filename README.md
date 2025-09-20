@@ -14,7 +14,7 @@ drone-audio/
 ├── samples/          # Surowe nagrania audio (.wav, .mp3)
 │   ├── consumer/     # Drony komercyjne / hobbystyczne
 │   ├── military/     # Drony wojskowe
-│   └── misc/         # Inne dźwięki śmigłowe / lotnicze
+│   └── misc/         # Inne dźwięki lotnicze
 ├── metadata/         # JSON/CSV z metadanymi (model, lokalizacja, warunki)
 ├── scripts/          # Skrypty do przetwarzania i analizy
 │   ├── spectrograms/ # Generowanie spektrogramów z audio
