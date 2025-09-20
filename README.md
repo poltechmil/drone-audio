@@ -28,12 +28,12 @@ Nazwy plików są takie same (różnią się tylko rozszerzeniem `.wav` vs `.jso
 
 ```text
 samples/
-├── dji_mavic_air_01.wav
-└── bayraktar_tb2_01.wav
+├── dji_mavic_air_data_01.wav
+└── bayraktar_tb2_data_01.wav
 
 metadata/
-├── dji_mavic_air_01.json
-└── bayraktar_tb2_01.json
+├── dji_mavic_air_data_01.json
+└── bayraktar_tb2_data_01.json
 
 
 ## 📑 Konwencja nazewnicza i metadane
