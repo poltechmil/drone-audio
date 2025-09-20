@@ -40,7 +40,7 @@ jobs:
             bytes=$(stat -c%s "$wav" 2>/dev/null || stat -f%z "$wav"); size=$(human_size "$bytes")
             if [ -f "$json" ]; then
               model=$(jq -r '.drone_model // empty' "$json" 2>/dev/null || echo "")
-              date=$(jq -r '.recorded_at // empty' "$json" 2>/dev/null || echo "")
+              date=$(jq -r '.added_at // empty' "$json" 2>/dev/null || echo "")
             else model=""; date=""; fi
             [ -z "$model" ] && model="—"; [ -z "$date" ] && date="—"
             audio_link="[${base}.wav](../samples/${base}.wav)"
