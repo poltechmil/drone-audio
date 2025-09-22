@@ -11,7 +11,7 @@ Lista nagrań z linkami do **audio (.wav)** i **metadanych (.json)**.
 | `limbach_l550e_20250922_01` | Limbach L550E | 2025-09-22 | [limbach_l550e_20250922_01.wav](../samples/limbach_l550e_20250922_01.wav) | 24.7 M | [limbach_l550e_20250922_01.json](limbach_l550e_20250922_01.json) |
 | `limbach_l550e_20250922_02` | Limbach L550E | 2025-09-22 | [limbach_l550e_20250922_02.wav](../samples/limbach_l550e_20250922_02.wav) | 24.8 M | [limbach_l550e_20250922_02.json](limbach_l550e_20250922_02.json) |
 | `limbach_l550e_20250922_03` | Limbach L550E | 2025-09-22 | [limbach_l550e_20250922_03.wav](../samples/limbach_l550e_20250922_03.wav) | 24.3 M | [limbach_l550e_20250922_03.json](limbach_l550e_20250922_03.json) |
-| `limbach_l550e_20250922_04` | — | — | [limbach_l550e_20250922_04.wav](../samples/limbach_l550e_20250922_04.wav) | 4.2 M | — |
+| `limbach_l550e_20250922_04` | Limbach L550E | 2025-09-22 | [limbach_l550e_20250922_04.wav](../samples/limbach_l550e_20250922_04.wav) | 4.2 M | [limbach_l550e_20250922_04.json](limbach_l550e_20250922_04.json) |
 | `shahed_136_20250920_01` | Shahed 136 | 2025-09-20 | [shahed_136_20250920_01.wav](../samples/shahed_136_20250920_01.wav) | 1.4 M | [shahed_136_20250920_01.json](shahed_136_20250920_01.json) |
 | `shahed_136_20250920_02` | Shahed 136 | 2025-09-20 | [shahed_136_20250920_02.wav](../samples/shahed_136_20250920_02.wav) | 2.5 M | [shahed_136_20250920_02.json](shahed_136_20250920_02.json) |
 | `shahed_136_20250920_03` | Shahed 136 | 2025-09-20 | [shahed_136_20250920_03.wav](../samples/shahed_136_20250920_03.wav) | 2.5 M | [shahed_136_20250920_03.json](shahed_136_20250920_03.json) |
